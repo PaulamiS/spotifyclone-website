@@ -22,6 +22,10 @@ It replicates the Spotify UI with smooth animations, responsive layout, and them
 
 ---
 
+
+<img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/7c704102-6eaf-470d-8cc7-464607f6fe2e" />
+
+
 ## 🚀 Getting Started  
 
 ### 1. Clone the repository  
