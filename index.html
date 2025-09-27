@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:,">
+  <script src="https://kit.fontawesome.com/eaef4eef92.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="main-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="nav-section">
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <!--<a href="#"><i class="fas fa-search"></i> Search</a>-->
+       <div class="search-container">
+        <i id="searchIcon" class="fas fa-search"></i>
+        <input type="text" id="searchBar" placeholder="Search songs..." style="display:none;" />
+       </div>
+
+
+        <a href="#"><i class="fas fa-book"></i> Your Library</a>
+
+      </div>
+
+      <div class="playlist-section">
+        <h3>Playlists</h3>
+        <a href="#"><i class="fas fa-music"></i> Hindi Vibes</a>
+        <a href="#"><i class="fas fa-music"></i> Chill Mix</a>
+        <a href="#"><i class="fas fa-music"></i> Romantic Songs</a>
+        <a href="#"><i class="fas fa-music"></i> Workout Hits</a>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="main-content">
+      <nav>
+        <ul>
+          <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+          <li>Home</li>
+          <li>About</li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <div class="songlist">
+          <h1>Best of NCS - No Copyright Sounds</h1>
+          <div class="songItemCointainer">
+
+            <!-- Repeat this div for each song -->
+            <div class="songItem">
+              <img src="covers/1.jpg" alt="1" />
+              <span class="songName">Tera Fitoor</span>
+              <span class="songlistplay">
+                <span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/2.jpg" alt="2" />
+              <span class="songName">Raabta</span>
+              <span class="songlistplay">
+                <span class="timestamp">04:22 <i id="1" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/3.jpg" alt="3" />
+              <span class="songName">Tum Mile</span>
+              <span class="songlistplay">
+                <span class="timestamp">05:12 <i id="2" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/4.jpg" alt="4" />
+              <span class="songName">Kesariya</span>
+              <span class="songlistplay">
+                <span class="timestamp">04:30 <i id="3" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/5.jpg" alt="5" />
+              <span class="songName">Shayad</span>
+              <span class="songlistplay">
+                <span class="timestamp">04:45 <i id="4" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/6.jpg" alt="6" />
+              <span class="songName">Apna Bana Le</span>
+              <span class="songlistplay">
+                <span class="timestamp">03:58 <i id="5" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/7.jpg" alt="7" />
+              <span class="songName">Hawayein</span>
+              <span class="songlistplay">
+                <span class="timestamp">04:19 <i id="6" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/8.jpg" alt="8" />
+              <span class="songName">Maan Meri Jaan</span>
+              <span class="songlistplay">
+                <span class="timestamp">03:55 <i id="7" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/9.jpg" alt="9" />
+              <span class="songName">Tujh Mein Rab Dikhta Hai</span>
+              <span class="songlistplay">
+                <span class="timestamp">05:06 <i id="8" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+            <div class="songItem">
+              <img src="covers/10.jpg" alt="10" />
+              <span class="songName">Raatan Lambiyan</span>
+              <span class="songlistplay">
+                <span class="timestamp">04:12 <i id="9" class="far songItemPlay fa-circle-play"></i></span>
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <div class="songbanner"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <input type="range" id="myProgressBar" min="0" value="0" max="100" />
+    <div class="icons">
+      <i class="fas fa-3x fa-backward-step" id="previous"></i>
+      <i class="far fa-3x fa-circle-play" id="masterPlay"></i>
+      <i class="fas fa-3x fa-forward-step" id="next"></i>
+    </div>
+    <div class="songinfo">
+      <img src="playing.gif" width="42px" id="gif" style="opacity: 0;" /> <span id="currentSong">Tera Fitoor - Arijit Singh</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
